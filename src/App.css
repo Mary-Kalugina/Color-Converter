@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.fields {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  height: 63px;
+}
+
+.rgb {
+  position: relative;
+  color: white;
+  margin-top: 15px;
+  width: 170px;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.rgb::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
